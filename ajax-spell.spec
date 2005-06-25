@@ -3,13 +3,13 @@
 # - apache config or sth?
 Summary:	AJAX spell checker
 Name:		ajax-spell
-Version:	2.1
-Release:	0.4
+Version:	2.2
+Release:	0.2
 Epoch:		0
 License:	BSD
 Group:		Applications/WWW
 Source0:	http://dl.sourceforge.net/ajax-spell/spell_checker-%{version}.zip
-# Source0-md5:	50010f24b22342e18f9c89944c28b763
+# Source0-md5:	7574b0c1f6635301533f914be7caea2b
 Patch0:		%{name}-fixes.patch
 URL:		http://www.broken-notebook.com/spell_checker/
 Requires:	php >= 3:4.3.0

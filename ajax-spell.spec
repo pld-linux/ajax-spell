@@ -5,7 +5,7 @@ Summary:	AJAX spell checker
 Summary(pl):	AJAX - narzêdzie do sprawdzania pisowni
 Name:		ajax-spell
 Version:	2.2
-Release:	0.2
+Release:	1
 Epoch:		0
 License:	BSD
 Group:		Applications/WWW
@@ -13,8 +13,8 @@ Source0:	http://dl.sourceforge.net/ajax-spell/spell_checker-%{version}.zip
 # Source0-md5:	7574b0c1f6635301533f914be7caea2b
 Patch0:		%{name}-fixes.patch
 URL:		http://www.broken-notebook.com/spell_checker/
-Requires:	php >= 3:4.3.0
 Requires:	pspell
+Requires:	webserver(php) >= 4.3.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 

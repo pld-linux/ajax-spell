@@ -2,7 +2,7 @@
 # - uses cpaint.sf.net (create package?)
 # - apache config or sth?
 Summary:	AJAX spell checker
-Summary(pl):	AJAX - narzêdzie do sprawdzania pisowni
+Summary(pl.UTF-8):   AJAX - narzÄ™dzie do sprawdzania pisowni
 Name:		ajax-spell
 Version:	2.2
 Release:	1
@@ -22,9 +22,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 AJAX spell checker for text areas using PHP, JavaScript, and pspell /
 aspell.
 
-%description -l pl
-AJAX to narzêdzie do sprawdzania pisowni dla pól tekstowych przy
-u¿yciu PHP, JavaScriptu oraz pspella/aspella.
+%description -l pl.UTF-8
+AJAX to narzÄ™dzie do sprawdzania pisowni dla pÃ³l tekstowych przy
+uÅ¼yciu PHP, JavaScriptu oraz pspella/aspella.
 
 %prep
 %setup -q -c

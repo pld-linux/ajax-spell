@@ -2,7 +2,7 @@
 # - uses cpaint.sf.net (create package?)
 # - apache config or sth?
 Summary:	AJAX spell checker
-Summary(pl.UTF-8):   AJAX - narzędzie do sprawdzania pisowni
+Summary(pl.UTF-8):	AJAX - narzędzie do sprawdzania pisowni
 Name:		ajax-spell
 Version:	2.2
 Release:	1

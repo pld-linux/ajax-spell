@@ -1,6 +1,5 @@
-diff -u ../pspell_comp.php ./pspell_comp.php
---- ../pspell_comp.php	2005-06-24 15:32:02.000000000 +0300
-+++ ./pspell_comp.php	2005-06-24 15:38:15.000000000 +0300
+--- spell_checker/pspell_comp.php.oryg	2007-04-19 14:37:05.000000000 +0200
++++ spell_checker/pspell_comp.php	2007-04-19 14:38:49.000000000 +0200
 @@ -44,9 +44,9 @@
  
  if(!defined('ASPELL_BIN')) define('ASPELL_BIN','aspell');
@@ -14,35 +13,24 @@ diff -u ../pspell_comp.php ./pspell_comp.php
  
  function pspell_config_create($language, $spelling=null, $jargon=null, $encoding='iso8859-1'){
      return new Pspell($language, $spelling, $jargon, $encoding);
-@@ -120,23 +120,23 @@
-     function _prepareArgs(){
-         $this->args = '';
- 
--        if($this->$language){
--            $this->args .= ' --lang='.escapeshellarg($language);
--        }else{
-+        if ($this->language) {
-+            $this->args .= ' --lang='.escapeshellarg($this->language);
-+        } else {
-             return false; // no lang no spell
-         }
- 
+@@ -129,11 +129,11 @@
          #FIXME how to support spelling?
  
--        if($this->$jargon){
+         if($this->$jargon){
 -            $this->args .= ' --jargon='.escapeshellarg($jargon);
-+        if ($this->jargon){
 +            $this->args .= ' --jargon='.escapeshellarg($this->jargon);
          }
  
--        if($this->$encoding){
+         if($this->$encoding){
 -            $this->args .= ' --encoding='.escapeshellarg($encoding);
-+        if($this->encoding){
 +            $this->args .= ' --encoding='.escapeshellarg($this->encoding);
          }
  
--        switch ($this->mode){
-+        switch ($this->mode) {
-             case PSPELL_FAST:
-                 $this->args .= ' --sug-mode=fast';
-                 break;
+         switch ($this->mode){
+@@ -233,4 +233,4 @@
+     }
+ }
+ 
+-?>
+\ Brak znaku nowej linii na koñcu pliku
++?>

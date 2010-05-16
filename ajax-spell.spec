@@ -13,6 +13,7 @@ Source0:	http://dl.sourceforge.net/ajax-spell/spell_checker-%{version}.zip
 # Source0-md5:	6ff8f7e585533d6166932608ea3541ea
 Patch0:		%{name}-fixes.patch
 URL:		http://www.broken-notebook.com/spell_checker/
+BuildRequires:	unzip
 Requires:	pspell
 Requires:	webserver(php) >= 4.3.0
 BuildArch:	noarch

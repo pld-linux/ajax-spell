@@ -32,7 +32,7 @@ użyciu PHP, JavaScriptu oraz pspella/aspella.
 # undos the source
 find . -type f -print0 | xargs -0 sed -i -e 's,
 $,,'
-%patch0 -p0
+%patch -P0 -p0
 
 %install
 rm -rf $RPM_BUILD_ROOT
